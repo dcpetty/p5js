@@ -1,0 +1,51 @@
+/* Global styles */
+html { width: 100%; height: 100%; }
+body {
+  padding: 1%; padding-top: 0; border: thin solid gray;
+  font-family: 'PT Sans Narrow', sans-serif; font-size: 14pt;
+}
+code, pre, .uri { font-family: 'Inconsolata', monospace; text-align: center; }
+iframe { border: 0; overflow: hidden; }
+input { font-family: inherit; font-size: inherit; }
+table { border-collapse: collapse; }
+th { border: thin solid gray; }
+th, td { padding: 0 1em; }
+.divider { border-top: thin solid gray; }
+
+/* Link styles: Lord Vader Hates Fluffy Animals */
+a:link { color: inherit; text-decoration-color: #ccc; }
+a:visited { color: inherit; text-decoration-color: #ccc; }
+a:hover { color: rebeccapurple; text-decoration-color: #ccc; }
+a:focus { color: rebeccapurple; text-decoration-color: #ccc; }
+a:active { color: rebeccapurple; text-decoration-color: #ccc; }
+
+/* Drop-down details styles */
+details summary::before {
+  content: "\25B6\0020";
+}
+details[open] summary {
+  background-color: #eee;
+  content: "\25BC\0020";
+}
+details[open] summary::before, details li::before {
+    content: "\25BC\0020";
+}
+
+/* Input styles */
+label, input, form ul { margin: 0; padding: 0; }
+form ul { list-style: none; }
+details summary, details ul li, .o ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+label { margin: 0 2px; min-width: 2em; text-align: right; }
+label::after { content: ":"; }
+input { width: 10em; min-width: 2em; }
+input.checkbox { width: 3em; }
+
+/* Footer styles */
+footer { 
+margin-top: 1em; border-top: thin solid gray;
+font-size: small; text-align: center;
+}

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <title>p5.js Test</title>
+<style>
+  iframe { width: 620px; height: 420px; } 
+</style>
+<script>
+/* TODO: move this to a separate directory w/ a separate .JS file. */
+// https://www.lingihuang.com/docs-blog/article-31-onLoad-and-onDOMContentLoaded.html
+// iframe is always null, so cannot scriptMessage() onload.
+const iframe = document.querySelector("#src");
+if (iframe) iframe.onLoad = scriptMessage;
+console.log(`iframe: ${iframe}`);
+// scriptMessage sent on DOMContentLoaded is never received by
+// document.querySelector("#src"), though it is received interval later.
+document.addEventListener("DOMContentLoaded", scriptMessage);
+function scriptMessage() {
+  // https://htmldom.dev/communication-between-an-iframe-and-its-parent-window/
+  const iframe = document.querySelector("#src");
+  if (iframe && iframe.dataset) {
+    const message = JSON.stringify({
+      color: iframe.dataset.color,
+      message: iframe.dataset.message,
+    });
+    console.log(`test: ${message}`);
+    // https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+    iframe.contentWindow.postMessage(message, null);
+    ` This will not work. p5.js does not allow cross-origin postMessage:
+    "dispatcher.js:35 Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://preview.p5js.org') does not match the recipient window's origin ('https://editor.p5js.org')."
+    `
+    return false;
+  }
+}
+const initialID = setInterval( () => {
+  scriptMessage();
+  clearInterval(initialID);
+}, 1000);
+// postMessage to #src every interval.
+const interval = 5000;
+var count = 0;
+/* postMessage every interval including random color and number message */ 
+const intervalID = setInterval( () => {
+  const iframe = document.querySelector("#src");
+  // https://htmldom.dev/communication-between-an-iframe-and-its-parent-window/
+  if (iframe) {
+    let r = (Math.floor(Math.random() * 6) * 3).toString(16);
+    let g = (Math.floor(Math.random() * 6) * 3).toString(16);
+    let b = (Math.floor(Math.random() * 6) * 3).toString(16);
+    const message = JSON.stringify({
+      color: `${r}${g}${b}`,
+      message: `#${count++}`
+    });
+    console.log(`test: ${message}`);
+    iframe.contentWindow.postMessage(message, null);
+  }
+}, interval);</script>
+  </head>
+  <body>
+    <h1>p5.js Test</h1>
+    <div id="content">
+      <!-- With the JS scriptMessage() function and data-* iframe attributes, *or* search parameters c & m on the iframe src URI, the color and message can be set - but not if hosted on https://p5js.org/. -->
+      <iframe id="src" src="https://psb-david-petty.github.io/p5js/coding-train-cc-59/src/" data-color="639" data-message="TEST"></iframe>
+    </div>
+    <footer>
+      <a href="https://github.com/psb-david-petty/p5js/tree/main/coding-train-cc-59/">🔗 permalink</a> and <a href="https://github.com/psb-david-petty/p5js/">🔩 repository</a> for <a href="https://editor.p5js.org/psb_david_petty/full/gblbwpq7g">this page</a>.
+    </footer>
+  </body>
+</html>
