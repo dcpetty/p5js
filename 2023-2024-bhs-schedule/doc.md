@@ -2,9 +2,9 @@
 
 This is a [p5.js](https://p5js.org/) sketch for the 2023-2024 Brookline High School Schedule ([v1B](https://bhs.brookline.k12.ma.us/uploads/8/0/1/5/801512/23_24bhsweeklysched_v1b.pdf)). [p5.js](https://p5js.org/) '&hellip;is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.'
 
-Use the link [https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule](https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule) with suitable query properties to display your custom schedule. The query properties are described below.
+Use the link [https://dcpetty.github.io/p5js/2023-2024-bhs-schedule](https://dcpetty.github.io/p5js/2023-2024-bhs-schedule) with suitable query properties to display your custom schedule. The query properties are described below.
 
-<span style="color: red; font-size: x-large; font-variant: small-caps;"><em>New</em> URI configuration tool:</span> [https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/uri](https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/uri).
+<span style="color: red; font-size: x-large; font-variant: small-caps;"><em>New</em> URI configuration tool:</span> [https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/uri](https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/uri).
 
 ## URI Query properties &mdash; TMI
 
@@ -12,7 +12,7 @@ See [https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax](https://e
 
 There are valid query properties for **text**, **room**, **lunch**, and **color**, plus **other** properties of interest (canvas width, font size, font face, footer legend, pad character). For example:
 
-The URI [https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/?at=bt=et=ft=gt=APCS&#8203;&ar=br=er=fr=gr=Room+373&#8203;&dl=1&#8203;&ac=hotpink&#8203;&bc=navy&#8203;&cc=orchid&#8203;&dc=gold&ec=chartreuse&#8203;&fc=dodgerblue&#8203;&gc=rebeccapurple](https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/?at=bt=et=ft=gt=APCS&ar=br=er=fr=gr=Room+373&dl=1&ac=hotpink&bc=navy&cc=orchid&dc=gold&ec=chartreuse&fc=dodgerblue&gc=rebeccapurple) sets the text for all five classes in blocks A, B, E, F, &amp; G as *APCS*, all five rooms in blocks A, B, E, F, &amp; G as *Room 373*, D lunch as *Lunch 1*, and individual colors for the seven blocks.
+The URI [https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/?at=bt=et=ft=gt=APCS&#8203;&ar=br=er=fr=gr=Room+373&#8203;&dl=1&#8203;&ac=hotpink&#8203;&bc=navy&#8203;&cc=orchid&#8203;&dc=gold&ec=chartreuse&#8203;&fc=dodgerblue&#8203;&gc=rebeccapurple](https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/?at=bt=et=ft=gt=APCS&ar=br=er=fr=gr=Room+373&dl=1&ac=hotpink&bc=navy&cc=orchid&dc=gold&ec=chartreuse&fc=dodgerblue&gc=rebeccapurple) sets the text for all five classes in blocks A, B, E, F, &amp; G as *APCS*, all five rooms in blocks A, B, E, F, &amp; G as *Room 373*, D lunch as *Lunch 1*, and individual colors for the seven blocks.
 
 ## Special characters
 
@@ -173,7 +173,7 @@ This HTML code sets the style and embeds an `iframe` for my 2022-2023 S1 schedul
   iframe { border: 0; min-width: 1150px; min-height: 1008px; }
 </style>
 <div style="overflow: hidden; display: flex; justify-content: center;">
-  <iframe src="https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/?cw=1150&ff=copperplate&fs=24&lg=%C2%A1I+have+no+more+classes!"></iframe>
+  <iframe src="https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/?cw=1150&ff=copperplate&fs=24&lg=%C2%A1I+have+no+more+classes!"></iframe>
 </div>
 ```
 
@@ -190,4 +190,4 @@ The default `iFrame` height and width style is `iframe { width: 1080; height: 99
 
 <hr>
 
-[&#128279; permalink](https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/doc.html) and [&#128297; repository](https://github.com/psb-david-petty/p5js/tree/main/2023-2024-bhs-schedule) for [this](https://editor.p5js.org/psb_david_petty/sketches/zNwdkmVsA) sketch.
+[&#128279; permalink](https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/doc.html) and [&#128297; repository](https://github.com/dcpetty/p5js/tree/main/2023-2024-bhs-schedule) for [this](https://editor.p5js.org/psb_david_petty/sketches/zNwdkmVsA) sketch.

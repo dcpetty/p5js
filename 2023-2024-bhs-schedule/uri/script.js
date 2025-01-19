@@ -1,8 +1,8 @@
 /** Automatic creation of query string for 
- * https://github.com/psb-david-petty/p5js/tree/main/2023-2024-bhs-schedule. */
+ * https://github.com/dcpetty/p5js/tree/main/2023-2024-bhs-schedule. */
 //345678901234567890123456789012345678901234567890123456789012345678901234567890
 
-const URI = `https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/`
+const URI = `https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/`
 
 /*
  * EventListeners
@@ -296,5 +296,5 @@ window.addLoad(initialize);
   iframe { width: 1080px; height: 996px; }
 </style>
 <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
-  <iframe src="https://psb-david-petty.github.io/p5js/2023-2024-bhs-schedule/"></iframe>
+  <iframe src="https://dcpetty.github.io/p5js/2023-2024-bhs-schedule/"></iframe>
 </div>`

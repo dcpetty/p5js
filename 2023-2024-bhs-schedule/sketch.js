@@ -1,6 +1,6 @@
 /** Draw the BHS weekly schedule.
  *
- * https://github.com/psb-david-petty/p5js/tree/main/2023-2024-bhs-schedule
+ * https://github.com/dcpetty/p5js/tree/main/2023-2024-bhs-schedule
  *
  * TODO: check and document all global variables in all functions
  */
