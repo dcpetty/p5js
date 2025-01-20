@@ -105,11 +105,13 @@ function echoMouse() {
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
+  const link = 
+    `https://raw.githubusercontent.com/dcpetty/p5js/refs/heads/main/ccsae`;
   // Anonymous async function for experiments promise.
   (async () => {
-    experiments = await parse(`experiments.csv`);
+    experiments = await parse(`${link}/experiments.csv`);
     console.log(experiments);
-    explainers = await parse(`explainers.csv`);
+    explainers = await parse(`${link}/explainers.csv`);
     console.log(explainers);
   })();
 }
@@ -152,7 +154,7 @@ function draw() {
 }
 
 function mouseClicked() {
-  let key;
+  let key = 'foo';
   key = isOver(experiments, d);
   if (key) window.open(experiments[key][3], '_blank');
   key = isOver(explainers, d * 1.5);
