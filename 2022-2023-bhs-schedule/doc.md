@@ -158,7 +158,7 @@ The query property `ln` has case-insensitive valid values `C1`, `L2`, `2`, `C2`,
 
 ## To embed in Google Sites
 
-This HTML code sets the style and embeds an `iframe` for my 2022-2023 S1 schedule in my [PSB Google Site](http://j.mp/psb_david_petty). Use it as an example.
+This HTML code sets the style and embeds an `iframe` for my 2022-2023 S1 schedule in my [PSB Google Site](https://j.mp/psb_david_petty). Use it as an example.
 
 ```html
 <style>

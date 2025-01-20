@@ -1,12 +1,12 @@
 // Daniel Shiffman
-// http://codingtra.in
+// https://codingtra.in
 // Steering Text Paths
 // Video: https://www.youtube.com/watch?v=4hA7G3gup-4
 
 // https://thecodingtrain.com/CodingChallenges/059-steering-text-paths.html
 // https://www.fontspace.com/edge-of-the-galaxy-font-f45748
 
-/* This sketch is modified from http://codingtra.in/ coding challenge 59.
+/* This sketch is modified from https://codingtra.in/ coding challenge 59.
  * I have updated it in a few ways.
  */
 

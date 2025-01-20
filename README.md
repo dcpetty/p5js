@@ -12,7 +12,7 @@ Included are some projects developed to learn more about [p5js](https://p5js.org
 | [./sol-lewitt-413/](https://dcpetty.github.io/p5js/sol-lewitt-413/) | After [Sol LeWitt *Wall Drawing #413*](https://massmoca.org/event/walldrawing413/) @ [Mass MoCA](https://massmoca.org/sol-lewitt/) |
 | [./sol-lewitt-414/](https://dcpetty.github.io/p5js/sol-lewitt-414/) | After [Sol LeWitt *Wall Drawing #414*](https://massmoca.org/event/walldrawing414/) @ [Mass MoCA](https://massmoca.org/sol-lewitt/) |
 
-Also included are projects inspired by *The Coding Train* ([http://codingtra.in/](http://codingtra.in/)).
+Also included are projects inspired by *The Coding Train* ([https://codingtra.in/](https://codingtra.in/)).
 
 | Sketch | Description |
 | --- | --- |

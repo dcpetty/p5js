@@ -1,5 +1,5 @@
 // Daniel Shiffman
-// http://codingtra.in
+// https://codingtra.in
 // Steering Text Paths
 // Video: https://www.youtube.com/watch?v=4hA7G3gup-4
 // https://github.com/CodingTrain/website/blob/main/CodingChallenges/CC_059_Steering_Text_Paths/P5/vehicle.js

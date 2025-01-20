@@ -275,7 +275,7 @@ function initialize() {
   return false;
 }
 
-// http://onwebdevelopment.blogspot.com/2008/07/chaining-functions-in-javascript.html
+// https://onwebdevelopment.blogspot.com/2008/07/chaining-functions-in-javascript.html
 const chain = function(args) {
   return function() {
     for(var i = 0; i < args.length; i++) {
