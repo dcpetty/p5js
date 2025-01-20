@@ -9,6 +9,7 @@
 <script>
 /* TODO: move this to a separate directory w/ a separate .JS file. */
 // https://www.lingihuang.com/docs-blog/article-31-onLoad-and-onDOMContentLoaded.html
+// https://medium.com/@thinuwanwickramaarachchi/communication-between-iframe-and-its-parent-app-ed39ba65cde1
 // iframe is always null, so cannot scriptMessage() onload.
 const iframe = document.querySelector("#src");
 if (iframe) iframe.onLoad = scriptMessage;
@@ -63,6 +64,7 @@ const intervalID = setInterval( () => {
       <!-- With the JS scriptMessage() function and data-* iframe attributes, *or* search parameters c & m on the iframe src URI, the color and message can be set - but not if hosted on https://p5js.org/. -->
       <iframe id="src" src="https://dcpetty.github.io/p5js/coding-train-cc-59/src/" data-color="639" data-message="TEST"></iframe>
     </div>
+    <p>This <code>test.html</code> page is an attempt to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage"><code>postMessage</code></a> with <a href="https://p5js.org/">p5.js</a>.</p>
     <footer>
       <a href="https://github.com/dcpetty/p5js/tree/main/coding-train-cc-59/">🔗 permalink</a> and <a href="https://github.com/dcpetty/p5js/">🔩 repository</a> for <a href="https://editor.p5js.org/psb_david_petty/full/gblbwpq7g">this page</a>.
     </footer>
