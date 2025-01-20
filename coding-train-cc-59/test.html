@@ -62,7 +62,8 @@ const intervalID = setInterval( () => {
     <h1>p5.js Test</h1>
     <div id="content">
       <!-- With the JS scriptMessage() function and data-* iframe attributes, *or* search parameters c & m on the iframe src URI, the color and message can be set - but not if hosted on https://p5js.org/. -->
-      <iframe id="src" src="https://dcpetty.github.io/p5js/coding-train-cc-59/src/" data-color="639" data-message="TEST"></iframe>
+      <!-- https://stackoverflow.com/a/71032825/17467335 Also added index.html full URI. -->
+      <iframe id="src" src="https://dcpetty.github.io/p5js/coding-train-cc-59/src/index.html" data-color="639" data-message="TEST"></iframe>
     </div>
     <p>This <code>test.html</code> page is an attempt to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage"><code>postMessage</code></a> with <a href="https://p5js.org/">p5.js</a>.</p>
     <footer>
