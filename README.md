@@ -6,7 +6,7 @@ This repository was originally cloned from [`psb-david-petty`](https://github.co
 Included are some projects developed to learn more about [p5js](https://p5js.org/). My first efforts were inspired by [Meredith Strickland](https://medium.com/@mere.strickland/create-your-own-sol-lewitt-with-p5-js-165cdeda2d88) and a visit to [Mass MoCA](https://photos.app.goo.gl/tp3ox1XT4pzBiW37A). Enjoy!
 
 | Sketch | Description | Documentation |
-| --- | --- | --- |
+| --- | --- | :-: |
 | [./centered-green/](https://dcpetty.github.io/p5js/centered-green/) | After [Richard Anuszkiewicz *Centered Green*](https://collections.sbma.net/objects/4870/centered-green) @ [SBMA](https://sbma.net/) |
 | [./night-sea/](https://dcpetty.github.io/p5js/night-sea/) | After [Edna Andrade *Night Sea*](https://harvardartmuseums.org/exhibitions/6455/edna-andrade-imagination-is-never-static) @ [HAM](https://harvardartmuseums.org/) | [doc](./centered-green/doc/)
 | [./sol-lewitt-118/](https://dcpetty.github.io/p5js/sol-lewitt-118/) | After [Sol LeWitt *Wall Drawing #118*](https://observer.com/2012/10/here-are-the-instructions-for-sol-lewitts-1971-wall-drawing-for-the-school-of-the-mfa-boston/) @ [SMFA](https://vimeo.com/49921870) |
