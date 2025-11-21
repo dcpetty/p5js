@@ -18,6 +18,9 @@ However, as you can see from my [p5.js rendering](../), *they are not sine waves
 
 This document describes my design journey when rendering  Edna Andrade's [*Night Sea*](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on).
 
+## Design considerations
+
+![night sea sketch](./night-sea.pdf)
 
 <hr>
 
