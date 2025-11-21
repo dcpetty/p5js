@@ -21,7 +21,14 @@ This document describes my design journey when rendering  Edna Andrade's [*Night
 ## Design considerations
 
 <iframe src="./night-sea.pdf"></iframe>
-
+<hr>
+<embed
+  src="./night-sea.pdf"
+  type="application/pdf"
+  width="100%"
+  height="800"
+  title="Embedded PDF Viewer"
+/>
 <hr>
 
 [&#128279; permalink](https://dcpetty.github.io/p5js/night-sea/doc/) and [&#128297; repository](https://github.com/dcpetty/p5js/tree/main/night-sea/doc/) for this page.
