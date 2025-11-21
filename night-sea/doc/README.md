@@ -20,7 +20,7 @@ This document describes my design journey when rendering  Edna Andrade's [*Night
 
 ## Design considerations
 
-<iframe src="./night-sea.pdf#toolbar=0&navpanes=0" width="100%"></iframe>
+<iframe src="./night-sea.pdf#toolbar=0&navpanes=0" width="100%" height="800px" loading="lazy" referrerpolicy="no-referrer"></iframe>
 <hr>
 <embed
   src="./night-sea.pdf"
