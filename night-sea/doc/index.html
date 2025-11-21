@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- To configure: set <titls> and MD_URI -->
+  <meta charset="utf-8" />
+  <title>https://dcpetty.dev/p5js/night-sea/</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Optional: GitHub-style CSS for nicer Markdown appearance -->
+  <link rel="stylesheet" href="https://unpkg.com/github-markdown-css@5.5.1/github-markdown.css">
+  <style>
+    body { margin: 0; padding: 2rem; background: #fff; }
+    .markdown-body { min-width: 800px; max-width: 80%; margin: 0 auto; }
+    #content { padding: 1rem; border: thick solid #eee; }
+  </style>
+</head>
+<body>
+  <article id="content" class="markdown-body">Loading…</article>
+
+  <!-- Marked (Markdown parser) -->
+  <script src="https://unpkg.com/marked@12.0.2/marked.min.js" integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous"></script>
+
+  <script>
+    // Security: sanitize HTML after converting from Markdown
+    // You can use DOMPurify to prevent XSS if the markdown isn't fully trusted.
+    // <script src="https://unpkg.com/dompurify@3.1.6/dist/purify.min.js">
+    // Then: const safe = DOMPurify.sanitize(html);
+
+    async function renderMarkdown(path) {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
+      const md = await res.text();
+
+      // Configure marked (optional)
+      marked.setOptions({
+        breaks: true,
+        mangle: false,          // preserve email addresses
+        headerIds: true,
+        gfm: true
+      });
+
+      const html = marked.parse(md);
+      // If using DOMPurify: const safe = DOMPurify.sanitize(html);
+      document.getElementById('content').innerHTML = html;
+    }
+
+    MD_URI = `https://dcpetty.dev/p5js/night-sea/doc/README.md`
+    renderMarkdown(MD_URI).catch(err => {
+      document.getElementById('content').textContent = String(err);
+      console.error(err);
+    });
+  </script>
+</body>
+</html>

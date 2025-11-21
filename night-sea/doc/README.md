@@ -17,3 +17,8 @@ The wall text for this painting says:
 However, as you can see from my [p5.js rendering](../), *they are not sine waves*.
 
 This document describes my design journey when rendering  Edna Andrade's [*Night Sea*](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on).
+
+
+<hr>
+
+[&#128279; permalink](https://dcpetty.github.io/p5js/night-sea/doc/) and [&#128297; repository](https://github.com/dcpetty/p5js/night-sea/doc/) for this page.
