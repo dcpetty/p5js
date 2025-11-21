@@ -1,6 +1,6 @@
-# After Edna Andrade [Night Sea](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on) (1977)
+# After Edna Andrade [Night Sea](https://www.visitpham.org/objects/72126) (1977)
 
-I saw this painting at the [Harvard Art Museums](https://harvardartmuseums.org/)' [*Edna Andrade: Imagination Is Never Static*](https://harvardartmuseums.org/exhibitions/6455/edna-andrade-imagination-is-never-static) show. Given the highly geometric nature of [*Night Sea*](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on), I decided to explore it through [p5js](https://p5js.org/) like my other [art projects](../../).
+I saw this painting at the [Harvard Art Museums](https://harvardartmuseums.org/)' [*Edna Andrade: Imagination Is Never Static*](https://harvardartmuseums.org/exhibitions/6455/edna-andrade-imagination-is-never-static) show. Given the highly geometric nature of [*Night Sea*](https://www.visitpham.org/objects/72126), I decided to explore it through [p5js](https://p5js.org/) like my other [art projects](../../).
 
 The wall text for this painting says:
 
@@ -16,18 +16,24 @@ The wall text for this painting says:
 
 However, as you can see from my [p5.js rendering](../), *they are not sine waves*.
 
-This document describes my design journey when rendering  Edna Andrade's [*Night Sea*](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on).
+This document describes my design journey when rendering  Edna Andrade's [*Night Sea*](https://www.visitpham.org/objects/72126).
 
 ## Design considerations
 
-<iframe src="./night-sea.pdf" width="80%" height="800px" style="display: block; margin: auto;" loading="lazy" referrerpolicy="no-referrer"></iframe>
+The first consideration for this project is analysis made from digital images &mdash; including from the [Philadelphia Art Museum](https://www.visitpham.org/objects/72126), [Elizabeth Minkel](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on), this [catalog](https://icaphila.org/books/edna-andrade-optical-paintings-1963-1986-2), and my own camers.
+
+- **Size**: the canvas is apparently square with *'sine waves'* spaced regularly across and down the canvas and regularly spaced points on the waves connected to corresponding points in adjacent waves.
+- **Colors**: Three colors, including grayish background (`#50505040`), blueish line (`#A8DDDD80`), and pinkish (`#EEBBC880`) line colors.
+- **Pattern**: The *'sine waves'* patterns are repeated, 2 waves across and 5 waves down.
+
+<iframe src="./night-sea.pdf#navpanes=0" width="80%" height="800px" style="display: block; margin: auto;" loading="lazy" referrerpolicy="no-referrer"></iframe>
 <hr>
 <embed
-  src="./night-sea.pdf#toolbar=0&navpanes=0"
+  src="./night-sea.pdf#navpanes=0"
   type="application/pdf"
   width="100%"
-  height="800"
-  title="Embedded PDF Viewer"
+  height="800px"
+  style="display: block; margin: auto;" 
 />
 <hr>
 
