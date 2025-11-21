@@ -20,8 +20,8 @@ This document describes my design journey when rendering  Edna Andrade's [*Night
 
 ## Design considerations
 
-![night sea sketch](./night-sea.pdf)
+<iframe src="./night-sea.pdf"></iframe>
 
 <hr>
 
-[&#128279; permalink](https://dcpetty.github.io/p5js/night-sea/doc/) and [&#128297; repository](https://github.com/dcpetty/p5js/night-sea/doc/) for this page.
+[&#128279; permalink](https://dcpetty.github.io/p5js/night-sea/doc/) and [&#128297; repository](https://github.com/dcpetty/p5js/tree/main/night-sea/doc/) for this page.
