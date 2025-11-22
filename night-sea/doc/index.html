@@ -43,7 +43,7 @@
       document.getElementById('content').innerHTML = html;
     }
 
-    MD_URI = `https://dcpetty.dev/p5js/night-sea/doc/README.md`
+    MD_URI = `https://dcpetty.github.io/p5js/night-sea/doc/README.md`
     renderMarkdown(MD_URI).catch(err => {
       document.getElementById('content').textContent = String(err);
       console.error(err);
