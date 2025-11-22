@@ -20,7 +20,7 @@ This document describes my design journey when rendering  Edna Andrade's [*Night
 
 ## Design analysis
 
-The analysis for this project is made from digital images &mdash; including from the [Philadelphia Art Museum](https://www.visitpham.org/objects/72126), [Elizabeth Minkel](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on), this [catalog](https://icaphila.org/books/edna-andrade-optical-paintings-1963-1986-2), and my own camera.
+The analysis for this project is made from digital images &mdash; including from the [Philadelphia Art Museum](https://www.visitpham.org/objects/72126), [Elizabeth Minkel](https://elizabethminkel.com/post/656807008243187712/oncanvas-night-sea-edna-andrade-1977-acrylic-on), this [2003 catalog](https://icaphila.org/books/edna-andrade-optical-paintings-1963-1986-2), and my own camera.
 
 - **Size**: the canvas is apparently square with *'sine waves'* spaced regularly across and down the canvas that have regularly spaced points on the waves connected to corresponding points in adjacent waves.
 - **Colors**: Three colors, including grayish background (`#50505040`), blueish line (`#A8DDDD80`), and pinkish (`#EEBBC880`) line colors.
@@ -32,16 +32,16 @@ Following the approach of previous [p5.js](https://p5js.org/) [art projects](../
 
 - I added a [p5.js sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) that includes a modified `index.html` file and `<div>`s and `<span>`s with `id="sketch-*"` properties to position [p5.js](https://p5js.org/) components.
 - The [repository](https://github.com/dcpetty/p5js/tree/main/night-sea) includes an `index.html` file with modified `<title>`, `<a>` &amp; `<iframe>` links.
-- The [p5.js sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has `style()`, `setup()`, and `draw()` functions as with other [art projects](../../). 
-- The [p5.js sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has other functions for calculating the wave points, minima and maxima, and arc length along the wave as a function of `periods` (initially `2`) and `waves` (initially `5`).
-- Because the design parameters of other [art projects](../../) like [*Centered Green*](../../centered-green/) can be changed, this [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has sliders for `periods`, `waves`, and `points`.
+- The [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has `style()`, `setup()`, and `draw()` functions as with other [art projects](../../). 
+- The [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has other functions for calculating the wave points, minima and maxima, and arc length along the wave as a function of `periods` (initially `2`) and `waves` (initially `5`).
+- Following the example of other [art projects](../../) like [*Centered Green*](../../centered-green/), this [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has design-parameter sliders for `periods`, `waves`, and `points`.
 - There is also a checkbox that selects the function type (*sine* or *ellipse*).
 
 ## False starts
 
 There 
 
-<iframe src="./night-sea.pdf#navpanes=0" width="50%" width="800px" style="display: block; margin: auto;" loading="lazy" referrerpolicy="no-referrer"></iframe>
+<iframe src="./night-sea.pdf#navpanes=0" width="50%" height="800px" style="display: block; margin: auto;" loading="lazy" referrerpolicy="no-referrer"></iframe>
 <!-- <hr>
 <embed
   src="./night-sea.pdf#navpanes=0"
