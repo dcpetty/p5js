@@ -37,9 +37,21 @@ Following the approach of previous [p5.js](https://p5js.org/) [art projects](../
 - Following the example of other [art projects](../../) like [*Centered Green*](../../centered-green/), this [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has design-parameter sliders for `periods`, `waves`, and `points`.
 - There is also a checkbox that selects the function type (*sine* or *ellipse*).
 
-## False starts
+## Design approach
 
-There 
+There were several false starts in this design. Some were based on bad assumptions about the wave function, some came from misinterpretation of how points on adjacent waves are connected, and some came from assuming a [sine function](https://en.wikipedia.org/wiki/Sine_and_cosine) for the wave.
+
+### The first approach
+
+- Scan the `x` component from left to right and calculate `y = f(x)` for each small interval (including calculating the total arc length).
+- The connected points appear to be evenly spaced along the non-linear wave, the connected-point `y` values cannot be calculated by *evenly spaced* `x` values, so calculate the total arc length divided by `points` (the number of points) to find the evenly spaced `(x, y)` points.
+- Collect the minima and maxima for each wave, since the connected points connect to minima and maxima on adjacent waves.
+- After rendering the [sine function](https://en.wikipedia.org/wiki/Sine_and_cosine), it appears that the periodic wave function may be made of piecewise [ellipse](https://en.wikipedia.org/wiki/Ellipse)s. That required implementing both `pointSine` and `pointEllipse` functions.
+- Finally, each connected point must be connected by [line](https://p5js.org/reference/p5/line/)s to minima and maxima on adjacent waves.
+
+### The next approach
+
+This 
 
 <iframe src="./night-sea.pdf#navpanes=0" width="50%" height="800px" style="display: block; margin: auto;" loading="lazy" referrerpolicy="no-referrer"></iframe>
 <!-- <hr>
@@ -50,6 +62,15 @@ There
   height="800px"
   style="display: block; margin: auto;" 
 /> -->
+
+## This document
+
+As part of my [p5.js](https://p5js.org/) [art projects](../../), many of the design rationales and design choices are documented in the [p5.js](https://p5js.org/) code. While it is important to document code *in the code*, many design choices &mdash; in particular, answers to 'why?' questions &mdash; are not typically captured in code comments. 
+
+As a consequence, I have added `doc/` directories to the other [art projects](../../) that include `README.md` files like this one. 
+
+*This* [`doc/`](.) directory also includes an `index.html` file that embeds the README files like [this](./README.md) one.
+
 <hr>
 
 [&#128279; permalink](https://dcpetty.github.io/p5js/night-sea/doc/) and [&#128297; repository](https://github.com/dcpetty/p5js/tree/main/night-sea/doc/) for this page.
