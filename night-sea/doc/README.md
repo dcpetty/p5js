@@ -33,7 +33,7 @@ Following the approach of previous [p5.js](https://p5js.org/) [art projects](../
 - I added a [p5.js sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) that includes a modified `index.html` file and `<div>`s and `<span>`s with `id="sketch-*"` properties to position [p5.js](https://p5js.org/) components.
 - The [repository](https://github.com/dcpetty/p5js/tree/main/night-sea) includes an `index.html` file with modified `<title>`, `<a>` &amp; `<iframe>` links.
 - The [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has `style()`, `setup()`, and `draw()` functions as with other [art projects](../../). 
-- The [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has other functions for calculating the wave points, minima and maxima, and arc length along the wave as a function of `periods` (initially `2`) and `waves` (initially `5`).
+- The [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has other functions for calculating the wave points, minima and maxima, and arc length along the wave as a function of `periods` (initially $2$) and `waves` (initially $5$).
 - Following the example of other [art projects](../../) like [*Centered Green*](../../centered-green/), this [sketch](https://editor.p5js.org/dcpetty/full/ny1Khhvxm) has design-parameter sliders for `periods`, `waves`, and `points`.
 - There is also a checkbox that selects the function type (*sine* or *ellipse*).
 
@@ -43,8 +43,8 @@ There were several false starts in this design. Some were based on bad assumptio
 
 ### The first approach
 
-- Scan the `x` component from left to right and calculate `y = f(x)` for each small interval (including calculating the total arc length) and save the (number of) `periods` periods of the (number of) `waves` waves in a 1D array.
-- The connected points appear to be evenly spaced along the non-linear wave, therefore the connected-point `y` values cannot be calculated by *evenly spaced* `x` values, so calculate the total arc length divided by (the number of ) `points` to find the evenly spaced `(x, y)` points.
+- Scan the $x$ component from left to right and calculate $y = f(x)$ for each small interval (including calculating the total arc length) and save the (number of) `periods` periods of the (number of) `waves` waves in a 1D array.
+- The connected points appear to be evenly spaced along the non-linear wave, therefore the connected-point `y` values cannot be calculated by *evenly spaced* $x$ values, so calculate the total arc length divided by (the number of ) `points` to find the evenly spaced $(x, y)$ points.
 - Collect the minima and maxima for each wave, since the connected points connect to minima and maxima on adjacent waves.
 - After rendering the [sine function](https://en.wikipedia.org/wiki/Sine_and_cosine), it visually appears that the periodic wave function may be made of piecewise [ellipse](https://en.wikipedia.org/wiki/Ellipse)s. That required implementing both `pointSine` and `pointEllipse` functions.
 - Finally, each connected point must be connected by [line](https://p5js.org/reference/p5/line/)s to minima and maxima on adjacent waves.
@@ -74,7 +74,7 @@ As part of my [p5.js](https://p5js.org/) [art projects](../../), many of the des
 
 As a consequence, I have added `doc/` directories to the other [art projects](../../) that include `README.md` files like this one. 
 
-*This* [`doc/`](.) directory also includes an `index.html` file that embeds the README files like [this](./README.md) one.
+*This* [`doc/`](.) directory also includes an `index.html` file that embeds the README files like [this](./README.md) one, incorporates [Markd](https://marked.js.org/) and [MathJax](https://www.mathjax.org/) rendering, and was created with the help of generative artificial intelligence (in the [Dia browser](https://www.diabrowser.com/)). 
 
 <hr>
 
